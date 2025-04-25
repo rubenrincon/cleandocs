@@ -7,15 +7,20 @@ OUTPUT_FILE="index.md"
 echo "# Documentation Sitemap" > $OUTPUT_FILE
 echo "" >> $OUTPUT_FILE
 
-# Find all .md files under docs/, excluding index.md
+# Find all .md files inside docs/, excluding index.md
 find docs -type f -name "*.md" ! -name "index.md" | sort | while read filepath; do
-  # Create a relative URL and a readable title
-  relpath="${filepath#docs/}"           # Remove leading "docs/"
-  title=$(basename "$relpath" .md)      # Get the filename without extension
-  title=$(echo $title | sed 's/-/ /g')  # Replace dashes with spaces
+  # Get relative path (remove 'docs/')
+  relpath="${filepath#docs/}"
 
-  echo "- [${title:u}](${relpath})" >> $OUTPUT_FILE
+  # Convert .md to .html for GitHub Pages linking
+  link="${relpath%.md}.html"
+
+  # Generate a readable title
+  title=$(basename "$relpath" .md)
+  title=$(echo $title | sed 's/-/ /g; s/_/ /g')
+
+  echo "- [${title:u}](${link})" >> $OUTPUT_FILE
 done
 
-echo "✅ index.md generated!"
+echo "✅ index.md updated with .html links!"
 
