@@ -1,174 +1,166 @@
 # Documentation Sitemap
 
-- [ADDONDATA](AddOnData.html)
-- [AREATEXTLAYOUT](AreaTextLayout.html)
-- [ARROWHEADTYPE](ArrowHeadType.html)
-- [ARTBOARDLIST](ArtboardList.html)
-- [ARTBOARDNODE](ArtboardNode.html)
-- [AUTOHEIGHTTEXTLAYOUT](AutoHeightTextLayout.html)
-- [AVAILABLEFONT](AvailableFont.html)
-- [BASEFONT](BaseFont.html)
-- [BASENODE](BaseNode.html)
-- [BASEPARAGRAPHSTYLES](BaseParagraphStyles.html)
-- [BITMAPIMAGE](BitmapImage.html)
-- [BLENDMODE](BlendMode.html)
-- [CHARACTERSTYLES](CharacterStyles.html)
-- [CHARACTERSTYLESINPUT](CharacterStylesInput.html)
-- [CHARACTERSTYLESRANGE](CharacterStylesRange.html)
-- [CHARACTERSTYLESRANGEINPUT](CharacterStylesRangeInput.html)
-- [COLOR](Color.html)
-- [COLORFILL](ColorFill.html)
-- [COLORUTILS](ColorUtils.html)
-- [COMPLEXSHAPENODE](ComplexShapeNode.html)
-- [CONTAINERNODE](ContainerNode.html)
-- [EDITOR](Editor.html)
-- [EDITOREVENT](EditorEvent.html)
-- [EDITOREVENTHANDLER](EditorEventHandler.html)
-- [ELLIPSENODE](EllipseNode.html)
-- [EVENTHANDLERID](EventHandlerId.html)
-- [EXPRESSROOTNODE](ExpressRootNode.html)
-- [FILL](Fill.html)
-- [FILLRULE](FillRule.html)
-- [FILLTYPE](FillType.html)
-- [FILLABLENODE](FillableNode.html)
-- [FONT](Font.html)
-- [GRIDCELLNODE](GridCellNode.html)
-- [GRIDLAYOUTNODE](GridLayoutNode.html)
-- [GROUPNODE](GroupNode.html)
-- [IFILLABLENODE](IFillableNode.html)
-- [IRECTANGULARNODE](IRectangularNode.html)
-- [ISTROKABLENODE](IStrokableNode.html)
-- [IMAGERECTANGLENODE](ImageRectangleNode.html)
-- [ITEMLIST](ItemList.html)
-- [LINENODE](LineNode.html)
-- [LISTITEM](ListItem.html)
-- [MEDIACONTAINERNODE](MediaContainerNode.html)
-- [NODE](Node.html)
-- [ORDEREDLISTNUMBERING](OrderedListNumbering.html)
-- [ORDEREDLISTSTYLE](OrderedListStyle.html)
-- [ORDEREDLISTSTYLEINPUT](OrderedListStyleInput.html)
-- [PAGELIST](PageList.html)
-- [PAGENODE](PageNode.html)
-- [PARAGRAPHLISTTYPE](ParagraphListType.html)
-- [PARAGRAPHSTYLES](ParagraphStyles.html)
-- [PARAGRAPHSTYLESINPUT](ParagraphStylesInput.html)
-- [PARAGRAPHSTYLESRANGE](ParagraphStylesRange.html)
-- [PARAGRAPHSTYLESRANGEINPUT](ParagraphStylesRangeInput.html)
-- [PATHNODE](PathNode.html)
-- [POINT](Point.html)
-- [POINTTEXTLAYOUT](PointTextLayout.html)
-- [READONLYITEMLIST](ReadOnlyItemList.html)
-- [RECT](Rect.html)
-- [RECTANGLEGEOMETRY](RectangleGeometry.html)
-- [RECTANGLENODE](RectangleNode.html)
-- [RESTRICTEDITEMLIST](RestrictedItemList.html)
-- [SCENENODETYPE](SceneNodeType.html)
-- [SOLIDCOLORSHAPENODE](SolidColorShapeNode.html)
-- [SOLIDCOLORSTROKE](SolidColorStroke.html)
-- [SOLIDCOLORSTROKEWITHOPTIONALTYPE](SolidColorStrokeWithOptionalType.html)
-- [STROKABLENODE](StrokableNode.html)
-- [STROKE](Stroke.html)
-- [STROKEPOSITION](StrokePosition.html)
-- [STROKESHAPENODE](StrokeShapeNode.html)
-- [STROKETYPE](StrokeType.html)
-- [STYLERANGE](StyleRange.html)
-- [TEXTALIGNMENT](TextAlignment.html)
-- [TEXTCONTENTMODEL](TextContentModel.html)
-- [TEXTNODE](TextNode.html)
-- [TEXTRANGE](TextRange.html)
-- [TEXTTYPE](TextType.html)
-- [UNAVAILABLEFONT](UnavailableFont.html)
-- [UNKNOWNNODE](UnknownNode.html)
-- [UNORDEREDLISTSTYLE](UnorderedListStyle.html)
-- [UNORDEREDLISTSTYLEINPUT](UnorderedListStyleInput.html)
-- [UNSUPPORTEDTEXTLAYOUT](UnsupportedTextLayout.html)
-- [VIEWPORT](Viewport.html)
-- [VISUALEFFECTTYPE](VisualEffectType.html)
-- [VISUALNODE](VisualNode.html)
-- [ACCESSIBILITY](accessibility.html)
-- [ADDONSDK APP](addonsdk-app.html)
-- [ADDONSDK CONSTANTS](addonsdk-constants.html)
-- [ADDONSDK INSTANCE](addonsdk-instance.html)
-- [ADDONSDK](addonsdk.html)
-- [APP CURRENTUSER](app-currentUser.html)
-- [APP DEVFLAGS](app-devFlags.html)
-- [APP DOCUMENT](app-document.html)
-- [APP OAUTH](app-oauth.html)
-- [APP UI](app-ui.html)
-- [AUTH](auth.html)
-- [BEST PRACTICES](best_practices.html)
-- [BRAND GUIDELINES](brand_guidelines.html)
-- [BRANDING GUIDELINES](branding_guidelines.html)
-- [BROWSER](browser.html)
-- [CHANGELOG](changelog.html)
-- [CODE PLAYGROUND](code_playground.html)
-- [COI](coi.html)
-- [COLOR PICKER](color-picker.html)
-- [COMPATIBILITY](compatibility.html)
-- [CONTENT](content.html)
-- [CONTEXT](context.html)
-- [CORS](cors.html)
-- [CREATE RENDITIONS](create_renditions.html)
-- [DESIGN PRINCIPLES](design_principles.html)
-- [DEV TOOLING](dev_tooling.html)
-- [DOCUMENT METADATA](document_metadata.html)
-- [DRAG AND DROP](drag_and_drop.html)
-- [EDGE CASE](edge_case.html)
-- [ELEMENT METADATA](element_metadata.html)
-- [FAQ](faq.html)
-- [FEATURES](features.html)
-- [FEEDBACK AND MESSAGING](feedback_and_messaging.html)
-- [FONTS](fonts.html)
-- [FRAMEWORKS LIBRARIES BUNDLING](frameworks-libraries-bundling.html)
-- [GRIDS ADDON](grids-addon.html)
-- [GROUP ELEMENTS](group_elements.html)
-- [HOW TO](how_to.html)
-- [IMPLEMENTATION GUIDE](implementation_guide.html)
-- [INSTANCE CLIENTSTORAGE](instance-clientStorage.html)
-- [INSTANCE MANIFEST](instance-manifest.html)
-- [INSTANCE RUNTIME](instance-runtime.html)
-- [INTRODUCTION](introduction.html)
-- [KNOWN ISSUES LIMITATIONS](known_issues_limitations.html)
-- [LISTING](listing.html)
-- [LISTING GUIDE](listing_guide.html)
-- [LOCAL DATA MANAGEMENT](local_data_management.html)
-- [MOBILE UX](mobile_ux.html)
-- [MODAL DIALOGS](modal_dialogs.html)
-- [MONETIZATION](monetization.html)
-- [OAUTH2](oauth2.html)
-- [OVERVIEW](overview.html)
-- [PAGE METADATA](page_metadata.html)
-- [PART1](part1.html)
-- [PART2](part2.html)
-- [PART3](part3.html)
-- [PERFORMANCE](performance.html)
-- [PLANNING](planning.html)
-- [POSITION ELEMENTS](position_elements.html)
-- [PREMIUM CONTENT](premium_content.html)
-- [PRIVATE DIST](private-dist.html)
-- [PUBLIC DIST](public-dist.html)
-- [QUICKSTART](quickstart.html)
-- [RECOMMENDATIONS](recommendations.html)
-- [REJECTIONS](rejections.html)
-- [REQUIREMENTS](requirements.html)
-- [RESOURCES AND REFERENCES](resources_and_references.html)
-- [RUNTIME DIALOG](runtime-dialog.html)
-- [SAMPLES](samples.html)
-- [SECURITY](security.html)
-- [SETUP](setup.html)
-- [STATS ADDON](stats-addon.html)
-- [SUBMISSION CHECKLIST](submission_checklist.html)
-- [THEME LOCALE](theme_locale.html)
-- [THEMING](theming.html)
-- [USABILITY](usability.html)
-- [USE AUDIO](use_audio.html)
-- [USE COLOR](use_color.html)
-- [USE GEOMETRY](use_geometry.html)
-- [USE IMAGES](use_images.html)
-- [USE PDF POWERPOINT](use_pdf_powerpoint.html)
-- [USE TEXT](use_text.html)
-- [USE VIDEOS](use_videos.html)
-- [USER INFO](user_info.html)
-- [USER INTERFACE](user_interface.html)
-- [VISUAL ELEMENTS](visual_elements.html)
-- [VS CODE](vs-code.html)
+- [Accessibility](Accessibility.html) – Guidelines for building accessible Express add-ons.
+- [AddOnData](AddOnData.html) – Structure representing metadata for an add-on.
+- [AddOnSDK App](AddOnSDK_App.html) – Interfaces for app-level functionality like authentication and content import.
+- [AreaTextLayout](AreaTextLayout.html) – Layout strategy for area text blocks.
+- [ArrowHeadType](ArrowHeadType.html) – Enum representing available arrowhead styles.
+- [ArtboardList](ArtboardList.html) – Collection of all artboards in a document.
+- [ArtboardNode](ArtboardNode.html) – Represents an individual artboard.
+- [AutoHeightTextLayout](AutoHeightTextLayout.html) – Text layout that automatically resizes its height.
+- [AvailableFont](AvailableFont.html) – Fonts available for text styling.
+- [BaseFont](BaseFont.html) – Base definition of font properties.
+- [BaseNode](BaseNode.html) – Abstract node from which all document nodes inherit.
+- [BaseParagraphStyles](BaseParagraphStyles.html) – Foundational styling options for paragraphs.
+- [BitmapImage](BitmapImage.html) – Embedded bitmap image resource.
+- [BlendMode](BlendMode.html) – Enum for blending visual layers.
+- [CharacterStyles](CharacterStyles.html) – Aggregated style properties for a text range.
+- [CharacterStylesInput](CharacterStylesInput.html) – Input object for updating character styles.
+- [CharacterStylesRange](CharacterStylesRange.html) – Styles applied across a text range.
+- [CharacterStylesRangeInput](CharacterStylesRangeInput.html) – Input for applying styles to a text range.
+- [Color](Color.html) – Representation of color models (RGB, HEX).
+- [ColorFill](ColorFill.html) – Fill style using a solid or gradient color.
+- [ColorUtils](ColorUtils.html) – Utility functions for color conversion and operations.
+- [ComplexShapeNode](ComplexShapeNode.html) – Shape built from multiple paths or curves.
+- [ContainerNode](ContainerNode.html) – Node containing and arranging child nodes.
+- [Document](Document.html) – Root structure for a full Express document.
+- [Editor](Editor.html) – Active editing environment context.
+- [EditorEvent](EditorEvent.html) – Events generated within an editor session.
+- [EditorEventHandler](EditorEventHandler.html) – Function for handling editor events.
+- [EllipseNode](EllipseNode.html) – Node representing an ellipse shape.
+- [EventHandlerId](EventHandlerId.html) – Unique identifier for registered event handlers.
+- [ExpressRootNode](ExpressRootNode.html) – Top-level container node in the document.
+- [Fill](Fill.html) – Fill property used for visual nodes.
+- [FillRule](FillRule.html) – Rule to determine how complex paths are filled.
+- [FillType](FillType.html) – Types of fills supported (solid, gradient).
+- [FillableNode](FillableNode.html) – Nodes that can have fill properties.
+- [Font](Font.html) – Full font definition including family, weight, and size.
+- [GridCellNode](GridCellNode.html) – Single cell in a grid layout.
+- [GridLayoutNode](GridLayoutNode.html) – Layout node arranging content in a grid.
+- [GroupNode](GroupNode.html) – Node grouping multiple child nodes.
+- [IFillableNode](IFillableNode.html) – Interface for nodes with fill capabilities.
+- [IRectangularNode](IRectangularNode.html) – Interface for nodes with rectangular bounds.
+- [IStrokableNode](IStrokableNode.html) – Interface for nodes supporting strokes.
+- [ImageData](ImageData.html) – Encapsulated image data object.
+- [ImageRectangleNode](ImageRectangleNode.html) – Rectangle node containing an image.
+- [ItemList](ItemList.html) – List structure managing document elements.
+- [LineNode](LineNode.html) – Node representing a straight line vector.
+- [ListItem](ListItem.html) – Single item in a list.
+- [MediaContainerNode](MediaContainerNode.html) – Node for embedding media assets like videos or GIFs.
+- [Node](Node.html) – Base entity for any visual or non-visual document component.
+- [OrderedListNumbering](OrderedListNumbering.html) – Enumeration of numbering styles for ordered lists.
+- [OrderedListStyle](OrderedListStyle.html) – Configuration options for ordered list appearance.
+- [OrderedListStyleInput](OrderedListStyleInput.html) – Input model for creating ordered list styles.
+- [PageList](PageList.html) – Collection representing all pages in the document.
+- [PageNode](PageNode.html) – Node representing a single page in a document.
+- [ParagraphListType](ParagraphListType.html) – Types of paragraph-based list structures.
+- [ParagraphStyles](ParagraphStyles.html) – Styling properties applied to text paragraphs.
+- [ParagraphStylesInput](ParagraphStylesInput.html) – Input model for updating paragraph styles.
+- [ParagraphStylesRange](ParagraphStylesRange.html) – Paragraph styling applied over specific text ranges.
+- [ParagraphStylesRangeInput](ParagraphStylesRangeInput.html) – Input model for paragraph style updates across ranges.
+- [PathNode](PathNode.html) – Node representing vector paths composed of segments.
+- [Point](Point.html) – 2D coordinate representing position (x, y).
+- [PointTextLayout](PointTextLayout.html) – Text layout beginning from a point location.
+- [ReadOnlyItemList](ReadOnlyItemList.html) – Immutable list structure for managing document elements.
+- [Rect](Rect.html) – Rectangle object with width, height, and position.
+- [RectangleGeometry](RectangleGeometry.html) – Geometric description of a rectangle shape.
+- [RectangleNode](RectangleNode.html) – Shape node representing a rectangular figure.
+- [RestrictedItemList](RestrictedItemList.html) – Item list with specific content constraints.
+- [SceneNodeType](SceneNodeType.html) – Enumeration of available scene node types.
+- [SolidColorShapeNode](SolidColorShapeNode.html) – Node filled with a single solid color.
+- [SolidColorStroke](SolidColorStroke.html) – Stroke rendered with a solid color.
+- [SolidColorStrokeWithOptionalType](SolidColorStrokeWithOptionalType.html) – Solid stroke with optional attributes like strokeType.
+- [StrokableNode](StrokableNode.html) – Nodes supporting border strokes.
+- [Stroke](Stroke.html) – Border definition for nodes including width and color.
+- [StrokePosition](StrokePosition.html) – Placement of a stroke relative to node boundaries (inside, outside, center).
+- [StrokeShapeNode](StrokeShapeNode.html) – Shape node supporting stroke properties.
+- [StrokeType](StrokeType.html) – Enumeration describing stroke styles (solid, dashed, etc.).
+- [StyleRange](StyleRange.html) – Range of characters sharing consistent styling.
+- [TextAlignment](TextAlignment.html) – Enum for text alignment (left, center, right, justify).
+- [TextContentModel](TextContentModel.html) – Structure representing rich text content.
+- [TextNode](TextNode.html) – Node that contains text within the document.
+- [TextRange](TextRange.html) – Start and end markers for a text section.
+- [TextType](TextType.html) – Differentiates between block-level and inline text.
+- [Transform](Transform.html) – Defines transformations like rotation, scaling, and translation.
+- [Typography](Typography.html) – Composite object for font styles, spacing, and alignment.
+- [UnavailableFont](UnavailableFont.html) – Placeholder when a specified font is not available.
+- [UnknownNode](UnknownNode.html) – Node type for unrecognized or unsupported elements.
+- [UnorderedListStyle](UnorderedListStyle.html) – Style configuration for unordered (bullet) lists.
+- [UnorderedListStyleInput](UnorderedListStyleInput.html) – Input model for configuring unordered list styles.
+- [UnsupportedTextLayout](UnsupportedTextLayout.html) – Placeholder for text layouts not supported by the editor.
+- [Viewport](Viewport.html) – Object representing the visible portion of the canvas.
+- [VisualEffectType](VisualEffectType.html) – Enum of supported visual effects (drop shadow, blur, etc.).
+- [VisualNode](VisualNode.html) – Base class for all nodes producing visual output.
+- [Known Issues Limitations](guides/debug/Known_Issues_Limitations.html) – List of known issues and limitations within the SDK or runtime.
+- [Quickstart](guides/Quickstart.html) – Guide for rapidly getting started building an Express add-on.
+- [Implementation Guide](guides/Implementation_Guide.html) – Full walkthrough of implementing your own add-on with best practices.
+- [AppDocument](app-api/AppDocument.html) – Provides access to the currently open document and its structure.
+- [AppOAuth](app-api/AppOAuth.html) – Interfaces for authenticating users via OAuth inside Express add-ons.
+- [AppTheme](app-api/AppTheme.html) – Information and utilities for detecting current app theme (dark/light mode).
+- [AppUser](app-api/AppUser.html) – User profile data available to add-ons.
+- [AppHost](app-api/AppHost.html) – Core runtime environment details for the Express add-on context.
+- [AppWindow](app-api/AppWindow.html) – APIs for manipulating add-on pop-ups, panels, and modals.
+- [AppContentImport](app-api/AppContentImport.html) – Interfaces for importing media and templates into a document.
+- [AppSelection](app-api/AppSelection.html) – APIs for retrieving and modifying the current selection in the document.
+- [AppClipboard](app-api/AppClipboard.html) – Clipboard utilities for copying and pasting content across documents.
+- [AppExport](app-api/AppExport.html) – Export APIs for rendering document content to file formats.
+- [App](app-api/App.html) – Top-level app APIs provided to Express add-ons.
+- [AddOnApi](app-api/AddOnApi.html) – Interfaces for interacting with the Express runtime from within an add-on.
+- [AddOnOptions](app-api/AddOnOptions.html) – Configuration options passed during add-on initialization.
+- [EventTypes](app-api/EventTypes.html) – Enumeration of event types triggered during add-on usage.
+- [SdkEventDispatcher](app-api/SdkEventDispatcher.html) – Event bus for dispatching and listening to events inside the SDK.
+- [SdkEventHandler](app-api/SdkEventHandler.html) – Type for handling SDK events in a standardized way.
+- [DocumentSelection](app-api/DocumentSelection.html) – Describes user selections within the current document.
+- [Sample: Hello World](samples/Hello_World.html) – Basic starter example for an Express add-on.
+- [Sample: Simple Text AddOn](samples/Simple_Text_AddOn.html) – Example demonstrating simple text element manipulation.
+- [Sample: Image Overlay AddOn](samples/Image_Overlay_AddOn.html) – Example showing how to overlay images dynamically.
+- [Sample: Create Artboard](samples/Create_Artboard.html) – Sample illustrating how to programmatically create new artboards.
+- [Sample: Working with Fonts](samples/Working_With_Fonts.html) – Demonstrates font listing, selection, and styling.
+- [Sample: Create Page Templates](samples/Create_Page_Templates.html) – Example showing creation of page layouts and templates.
+- [Sample: Shadow Effects](samples/Shadow_Effects.html) – Sample for applying shadow visual effects to elements.
+- [Best Practices: Editor](best-practices/Editor_Best_Practices.html) – Recommended best practices for using the Editor APIs.
+- [Best Practices: Performance](best-practices/Performance_Best_Practices.html) – Tips for optimizing add-on performance.
+- [Best Practices: UI/UX](best-practices/UI_UX_Best_Practices.html) – Suggestions for building user-friendly add-on interfaces.
+- [Monetization Guide](monetization/Monetization_Guide.html) – How to monetize your add-ons and available opportunities.
+- [Express Design Tokens](design/Express_Design_Tokens.html) – Guide on using Express design tokens for theming and consistency.
+- [Express Themes](design/Express_Themes.html) – Documentation about theme management and light/dark modes.
+- [Express UI Components](design/Express_UI_Components.html) – Overview of available UI components for building add-ons.
+- [UI Kit Button](ui-components/Button.html) – Button component for Express UI kit.
+- [UI Kit Checkbox](ui-components/Checkbox.html) – Checkbox component for binary options.
+- [UI Kit Combobox](ui-components/Combobox.html) – Combobox component for selecting from a dropdown.
+- [UI Kit Dialog](ui-components/Dialog.html) – Dialog component for modal interactions.
+- [UI Kit Divider](ui-components/Divider.html) – Divider component for separating UI sections.
+- [UI Kit Flex](ui-components/Flex.html) – Flex layout container for arranging child components.
+- [UI Kit Form](ui-components/Form.html) – Form container for organizing input fields.
+- [UI Kit Icon](ui-components/Icon.html) – Icon rendering component for visual symbols.
+- [UI Kit Input](ui-components/Input.html) – Standard text input field component.
+- [UI Kit Label](ui-components/Label.html) – Label component for describing form inputs.
+- [UI Kit Link](ui-components/Link.html) – Hyperlink component for navigation.
+- [UI Kit Loading Spinner](ui-components/LoadingSpinner.html) – Loading spinner indicator for async operations.
+- [UI Kit Number Input](ui-components/NumberInput.html) – Numeric input field with increment/decrement controls.
+- [UI Kit Popover](ui-components/Popover.html) – Popover component for contextual UI overlays.
+- [UI Kit Radio](ui-components/Radio.html) – Radio button component for single-choice selection.
+- [UI Kit Radio Group](ui-components/RadioGroup.html) – Grouped radio buttons for mutually exclusive selections.
+- [UI Kit Select](ui-components/Select.html) – Select component for dropdown-based selections.
+- [UI Kit Switch](ui-components/Switch.html) – Switch/toggle component for binary options.
+- [UI Kit Tabs](ui-components/Tabs.html) – Tabbed navigation container for content switching.
+- [UI Kit Textarea](ui-components/Textarea.html) – Multiline text input field.
+- [UI Kit Toast](ui-components/Toast.html) – Notification popup for transient messages.
+- [UI Kit Tooltip](ui-components/Tooltip.html) – Tooltip component providing hover information.
+- [UI Kit VStack](ui-components/VStack.html) – Vertical stack layout for arranging components vertically.
+- [Hooks: useColorScheme](hooks/useColorScheme.html) – React hook for detecting current color scheme (light or dark mode).
+- [Hooks: useEditor](hooks/useEditor.html) – React hook for accessing the Express Editor instance.
+- [Hooks: useSelection](hooks/useSelection.html) – React hook for managing the user's selection within the document.
+- [Hooks: useWindowDimensions](hooks/useWindowDimensions.html) – React hook for accessing window size and dimensions.
+- [Types: Event Handler](types/EventHandler.html) – Typing for standardized event handling functions.
+- [Types: Node ID](types/NodeID.html) – Unique identifier type for document nodes.
+- [Types: OAuth State](types/OAuthState.html) – Represents authentication states in OAuth workflows.
+- [Types: SDK Event](types/SdkEvent.html) – General structure for events triggered within the SDK environment.
+- [Types: Theme Info](types/ThemeInfo.html) – Object describing active theme settings (colors, variants).
+- [Types: UI Token](types/UIToken.html) – Token types for UI customization and theming.
+- [Manifest: AddOn Manifest](manifest/AddOnManifest.html) – JSON schema definition for configuring add-on metadata.
+- [Manifest: UI Manifest](manifest/UIManifest.html) – JSON schema for configuring the user interface of add-ons.
+- [Manifest: Theme Manifest](manifest/ThemeManifest.html) – JSON schema for declaring add-on theme resources.
+- [Samples: App Context](samples/AppContext.html) – Example using context providers in an add-on.
+- [Samples: UI Components Sample](samples/UIComponentsSample.html) – Demonstration of available UI components in an Express add-on.
+- [Samples: OAuth Flow Sample](samples/OAuthFlowSample.html) – Sample project demonstrating how to implement OAuth inside an add-on.
