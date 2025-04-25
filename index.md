@@ -1,119 +1,179 @@
-# Adobe Express Add-on Documentation
+# Documentation Sitemap
 
-This repo contains all of the guides and references for Adobe Express add-on developers, hosted at https://developer.adobe.com/express/add-ons/docs/guides/.
-
-## Document API References - Manual Formatting Steps
-
-This section outlines the steps that should be taken to format the generated Document API references from Horizon into a Gatsby-friendly format.
-
-**TIP:** it's easiest to open just the `editor` folder in VS Code (or your favorite editor) so you can globally search and replace in only those files to avoid unintentional mistakes. (Or set the advanced search settings to exclude everything else).
-
-**Recommended pre-req:** Install [this extension](https://marketplace.visualstudio.com/items?itemName=jakearl.search-editor-apply-changes) in VS Code to make it easier to apply transformations across many files.
-
-1. **Search** and **Replace** again across files to change the auto-generated HLAPI docs headings from `@hz/add-on-hz-hlapi-sdk` –> to `@express-document-sdk`.
-
-2. The heading in the generated `classes`, `enumerations`, `interfaces`, `namespaces`, and `type-aliases` is not required. So, find and remove all occurrences of:
-
-    ```md
-    [**@express-document-sdk**](../overview.md) • **Docs**
-
-    ---
-    ```
-
-3. The API signatures generated in `classes`, `enumerations`, `interfaces`, `namespaces`, and `type-aliases` is indented. In these directories, find and replace all occurrences of `newline + > + space` with `newline + • + space`, ensuring no code example or closing tag is replaced.
-
-4. Find and replace all \`mat2d\` --> \[\`mat2d\`\]\(https://glmatrix.net/docs/module-mat2d.html)
-
-5. Fix any `[iterator]` links to remove the brackets from the link references to ensure they work. For instance: `ArtboardList.md#%5Biterator%5D` should be `ArtboardList.md#iterator`. To fix, use Search again with a regex string of `.md#%5Biterator%5D` and replace with `.md#iterator`.
-
-6. Find and remove all occurrences of `TemplatizedProxyLiveObject`. An example is of `ReadOnlyItemList.md`, where you should remove the following section:
-
-    ```md
-    ## Extends
-
-    -   `TemplatizedProxyLiveObject`<`HzApiInputType`\>
-    ```
-
-7. Find and remove all occurrences of `ProxyLiveObject`. An example is of `BaseNode.md`, where you should remove the following section:
-
-    ```md
-    ## Extends
-
-    -   `ProxyLiveObject`
-    ```
-
-8. Add a blank line after any `InlineAlert` in the Enums to render them properly. _(This can be easily fixed in the hz repo)_
-
-9. Ensure any lists are surrounded by one blank line so the linter in the PR job doesn't complain. See **Context**, **Editor** classes specifically such as the `makeStroke` method which has a list. (Note: you can check the PR validation job to see if you missed any). _(This can be easily fixed in the hz repo)_
-
-10. Find and replace `\<` with `<` for all `.md` files.
-
-11. Find and replace "\n`Experimental`\n" with "" with a regex option turned on in VS Code for all `.md` files. This will remove the additional `Experimental` text from the generated docs.
-
-## Adobe I/O Documentation Template Info
-
-This is a site template built with the [Adobe I/O Theme](https://github.com/adobe/aio-theme).
-
-View the [demo](https://adobedocs.github.io/dev-site-documentation-template/) running on Github Pages.
-
-## Where to ask for help
-
-The slack channel #adobe-developer-website is our main point of contact for help. Feel free to join the channel and ask any questions.
-
-## How to develop
-
-For local development, simply use :
-
-```shell
-$ yarn install
-$ yarn dev
-```
-
-For the developer documentation, read the following sections on how to:
-
--   [Arrange the structure content of your docs](https://github.com/adobe/aio-theme#content-structure)
--   [Link to pages](https://github.com/adobe/aio-theme#links)
--   [Use assets](https://github.com/adobe/aio-theme#assets)
--   [Set global Navigation](https://github.com/adobe/aio-theme#global-navigation)
--   [Set side navigation](https://github.com/adobe/aio-theme#side-navigation)
--   [Use content blocks](https://github.com/adobe/aio-theme#jsx-blocks)
--   [Use Markdown](https://github.com/adobe/aio-theme#writing-enhanced-markdown)
-
-For more in-depth [instructions](https://github.com/adobe/aio-theme#getting-started).
-
-## How to test
-
--   To run the configured linters locally (requires [Docker](https://www.docker.com/)):
-
-    ```shell
-    yarn lint
-    ```
-
-    > NOTE If you cannot use Docker, you can install the linters separately. In `.github/super-linter.env`, see which linters are enabled, and find the tools being used for linting in [Supported Linters](https://github.com/github/super-linter#supported-linters).
-
--   To check internal links locally
-
-    ```shell
-    yarn test:links
-    ```
-
--   To build and preview locally:
-
-    ```shell
-    yarn start
-    ```
-
-## How to deploy
-
-For any team that wishes to deploy to the developer.adobe.com and developer-stage.adobe.com websites, they must be in contact with the dev-site team. Teams will be given a path that will follow the pattern `developer.adobe.com/{product}/`. This will allow doc developers to setup their subpaths to look something like:
-
-```text
-developer.adobe.com/{product}/docs
-developer.adobe.com/{product}/community
-developer.adobe.com/{product}/community/code_of_conduct
-developer.adobe.com/{product}/community/contribute
-```
-
-### Launching a deploy
-
-You can deploy using the GitHub actions deploy workflow see [deploy instructions](https://github.com/adobe/aio-theme#deploy-to-azure-storage-static-websites).
+- [BROWSER](pages/guides/debug/browser.md)
+- [KNOWN_ISSUES_LIMITATIONS](pages/guides/debug/known_issues_limitations.md)
+- [VS CODE](pages/guides/debug/vs-code.md)
+- [BEST_PRACTICES](pages/guides/design/best_practices.md)
+- [FONTS](pages/guides/design/fonts.md)
+- [IMPLEMENTATION_GUIDE](pages/guides/design/implementation_guide.md)
+- [BRANDING_GUIDELINES](pages/guides/design/ux_guidelines/branding_guidelines.md)
+- [CHANGELOG](pages/guides/design/ux_guidelines/changelog.md)
+- [DESIGN_PRINCIPLES](pages/guides/design/ux_guidelines/design_principles.md)
+- [FEEDBACK_AND_MESSAGING](pages/guides/design/ux_guidelines/feedback_and_messaging.md)
+- [INTRODUCTION](pages/guides/design/ux_guidelines/introduction.md)
+- [MOBILE_UX](pages/guides/design/ux_guidelines/mobile_ux.md)
+- [RESOURCES_AND_REFERENCES](pages/guides/design/ux_guidelines/resources_and_references.md)
+- [THEMING](pages/guides/design/ux_guidelines/theming.md)
+- [VISUAL_ELEMENTS](pages/guides/design/ux_guidelines/visual_elements.md)
+- [COI](pages/guides/develop/coi.md)
+- [CONTEXT](pages/guides/develop/context.md)
+- [CORS](pages/guides/develop/cors.md)
+- [FRAMEWORKS LIBRARIES BUNDLING](pages/guides/develop/frameworks-libraries-bundling.md)
+- [HOW_TO](pages/guides/develop/how_to.md)
+- [CREATE_RENDITIONS](pages/guides/develop/how_to/create_renditions.md)
+- [DOCUMENT_METADATA](pages/guides/develop/how_to/document_metadata.md)
+- [DRAG_AND_DROP](pages/guides/develop/how_to/drag_and_drop.md)
+- [ELEMENT_METADATA](pages/guides/develop/how_to/element_metadata.md)
+- [GROUP_ELEMENTS](pages/guides/develop/how_to/group_elements.md)
+- [LOCAL_DATA_MANAGEMENT](pages/guides/develop/how_to/local_data_management.md)
+- [MODAL_DIALOGS](pages/guides/develop/how_to/modal_dialogs.md)
+- [OAUTH2](pages/guides/develop/how_to/oauth2.md)
+- [PAGE_METADATA](pages/guides/develop/how_to/page_metadata.md)
+- [POSITION_ELEMENTS](pages/guides/develop/how_to/position_elements.md)
+- [PREMIUM_CONTENT](pages/guides/develop/how_to/premium_content.md)
+- [THEME_LOCALE](pages/guides/develop/how_to/theme_locale.md)
+- [USE_AUDIO](pages/guides/develop/how_to/use_audio.md)
+- [USE_COLOR](pages/guides/develop/how_to/use_color.md)
+- [USE_GEOMETRY](pages/guides/develop/how_to/use_geometry.md)
+- [USE_IMAGES](pages/guides/develop/how_to/use_images.md)
+- [USE_PDF_POWERPOINT](pages/guides/develop/how_to/use_pdf_powerpoint.md)
+- [USE_TEXT](pages/guides/develop/how_to/use_text.md)
+- [USE_VIDEOS](pages/guides/develop/how_to/use_videos.md)
+- [USER_INFO](pages/guides/develop/how_to/user_info.md)
+- [PERFORMANCE](pages/guides/develop/performance.md)
+- [BRAND_GUIDELINES](pages/guides/distribute/guidelines/brand_guidelines.md)
+- [RECOMMENDATIONS](pages/guides/distribute/guidelines/genai/recommendations.md)
+- [REQUIREMENTS](pages/guides/distribute/guidelines/genai/requirements.md)
+- [ACCESSIBILITY](pages/guides/distribute/guidelines/general/accessibility.md)
+- [AUTH](pages/guides/distribute/guidelines/general/auth.md)
+- [COMPATIBILITY](pages/guides/distribute/guidelines/general/compatibility.md)
+- [CONTENT](pages/guides/distribute/guidelines/general/content.md)
+- [EDGE_CASE](pages/guides/distribute/guidelines/general/edge_case.md)
+- [FEATURES](pages/guides/distribute/guidelines/general/features.md)
+- [LISTING](pages/guides/distribute/guidelines/general/listing.md)
+- [PERFORMANCE](pages/guides/distribute/guidelines/general/performance.md)
+- [PLANNING](pages/guides/distribute/guidelines/general/planning.md)
+- [SECURITY](pages/guides/distribute/guidelines/general/security.md)
+- [USABILITY](pages/guides/distribute/guidelines/general/usability.md)
+- [USER_INTERFACE](pages/guides/distribute/guidelines/general/user_interface.md)
+- [MONETIZATION](pages/guides/distribute/guidelines/monetization.md)
+- [LISTING_GUIDE](pages/guides/distribute/listing_guide.md)
+- [PRIVATE DIST](pages/guides/distribute/private-dist.md)
+- [PUBLIC DIST](pages/guides/distribute/public-dist.md)
+- [REJECTIONS](pages/guides/distribute/rejections.md)
+- [SUBMISSION_CHECKLIST](pages/guides/distribute/review_process/submission_checklist.md)
+- [FAQ](pages/guides/faq.md)
+- [CODE_PLAYGROUND](pages/guides/getting_started/code_playground.md)
+- [DEV_TOOLING](pages/guides/getting_started/dev_tooling.md)
+- [QUICKSTART](pages/guides/getting_started/quickstart.md)
+- [SETUP](pages/guides/getting_started/setup.md)
+- [GRIDS ADDON](pages/guides/tutorials/grids-addon.md)
+- [PART1](pages/guides/tutorials/spectrum-workshop/part1.md)
+- [PART2](pages/guides/tutorials/spectrum-workshop/part2.md)
+- [PART3](pages/guides/tutorials/spectrum-workshop/part3.md)
+- [STATS ADDON](pages/guides/tutorials/stats-addon.md)
+- [ADDONSDK APP](pages/references/addonsdk/addonsdk-app.md)
+- [ADDONSDK CONSTANTS](pages/references/addonsdk/addonsdk-constants.md)
+- [ADDONSDK INSTANCE](pages/references/addonsdk/addonsdk-instance.md)
+- [ADDONSDK](pages/references/addonsdk/addonsdk.md)
+- [APP CURRENTUSER](pages/references/addonsdk/app-currentUser.md)
+- [APP DEVFLAGS](pages/references/addonsdk/app-devFlags.md)
+- [APP DOCUMENT](pages/references/addonsdk/app-document.md)
+- [APP OAUTH](pages/references/addonsdk/app-oauth.md)
+- [APP UI](pages/references/addonsdk/app-ui.md)
+- [INSTANCE CLIENTSTORAGE](pages/references/addonsdk/instance-clientStorage.md)
+- [INSTANCE MANIFEST](pages/references/addonsdk/instance-manifest.md)
+- [INSTANCE RUNTIME](pages/references/addonsdk/instance-runtime.md)
+- [RUNTIME DIALOG](pages/references/addonsdk/runtime-dialog.md)
+- [CHANGELOG](pages/references/changelog.md)
+- [ADDONDATA](pages/references/document-sandbox/document-apis/classes/AddOnData.md)
+- [ARTBOARDLIST](pages/references/document-sandbox/document-apis/classes/ArtboardList.md)
+- [ARTBOARDNODE](pages/references/document-sandbox/document-apis/classes/ArtboardNode.md)
+- [AVAILABLEFONT](pages/references/document-sandbox/document-apis/classes/AvailableFont.md)
+- [BASEFONT](pages/references/document-sandbox/document-apis/classes/BaseFont.md)
+- [BASENODE](pages/references/document-sandbox/document-apis/classes/BaseNode.md)
+- [COLORUTILS](pages/references/document-sandbox/document-apis/classes/ColorUtils.md)
+- [COMPLEXSHAPENODE](pages/references/document-sandbox/document-apis/classes/ComplexShapeNode.md)
+- [CONTEXT](pages/references/document-sandbox/document-apis/classes/Context.md)
+- [EDITOR](pages/references/document-sandbox/document-apis/classes/Editor.md)
+- [ELLIPSENODE](pages/references/document-sandbox/document-apis/classes/EllipseNode.md)
+- [EXPRESSROOTNODE](pages/references/document-sandbox/document-apis/classes/ExpressRootNode.md)
+- [FILLABLENODE](pages/references/document-sandbox/document-apis/classes/FillableNode.md)
+- [FONTS](pages/references/document-sandbox/document-apis/classes/Fonts.md)
+- [GRIDCELLNODE](pages/references/document-sandbox/document-apis/classes/GridCellNode.md)
+- [GRIDLAYOUTNODE](pages/references/document-sandbox/document-apis/classes/GridLayoutNode.md)
+- [GROUPNODE](pages/references/document-sandbox/document-apis/classes/GroupNode.md)
+- [IMAGERECTANGLENODE](pages/references/document-sandbox/document-apis/classes/ImageRectangleNode.md)
+- [ITEMLIST](pages/references/document-sandbox/document-apis/classes/ItemList.md)
+- [LINENODE](pages/references/document-sandbox/document-apis/classes/LineNode.md)
+- [MEDIACONTAINERNODE](pages/references/document-sandbox/document-apis/classes/MediaContainerNode.md)
+- [NODE](pages/references/document-sandbox/document-apis/classes/Node.md)
+- [PAGELIST](pages/references/document-sandbox/document-apis/classes/PageList.md)
+- [PAGENODE](pages/references/document-sandbox/document-apis/classes/PageNode.md)
+- [PATHNODE](pages/references/document-sandbox/document-apis/classes/PathNode.md)
+- [READONLYITEMLIST](pages/references/document-sandbox/document-apis/classes/ReadOnlyItemList.md)
+- [RECTANGLENODE](pages/references/document-sandbox/document-apis/classes/RectangleNode.md)
+- [RESTRICTEDITEMLIST](pages/references/document-sandbox/document-apis/classes/RestrictedItemList.md)
+- [SOLIDCOLORSHAPENODE](pages/references/document-sandbox/document-apis/classes/SolidColorShapeNode.md)
+- [STROKABLENODE](pages/references/document-sandbox/document-apis/classes/StrokableNode.md)
+- [STROKESHAPENODE](pages/references/document-sandbox/document-apis/classes/StrokeShapeNode.md)
+- [TEXTCONTENTMODEL](pages/references/document-sandbox/document-apis/classes/TextContentModel.md)
+- [TEXTNODE](pages/references/document-sandbox/document-apis/classes/TextNode.md)
+- [UNAVAILABLEFONT](pages/references/document-sandbox/document-apis/classes/UnavailableFont.md)
+- [UNKNOWNNODE](pages/references/document-sandbox/document-apis/classes/UnknownNode.md)
+- [VIEWPORT](pages/references/document-sandbox/document-apis/classes/Viewport.md)
+- [VISUALNODE](pages/references/document-sandbox/document-apis/classes/VisualNode.md)
+- [ARROWHEADTYPE](pages/references/document-sandbox/document-apis/enumerations/ArrowHeadType.md)
+- [BLENDMODE](pages/references/document-sandbox/document-apis/enumerations/BlendMode.md)
+- [EDITOREVENT](pages/references/document-sandbox/document-apis/enumerations/EditorEvent.md)
+- [FILLRULE](pages/references/document-sandbox/document-apis/enumerations/FillRule.md)
+- [FILLTYPE](pages/references/document-sandbox/document-apis/enumerations/FillType.md)
+- [SCENENODETYPE](pages/references/document-sandbox/document-apis/enumerations/SceneNodeType.md)
+- [STROKEPOSITION](pages/references/document-sandbox/document-apis/enumerations/StrokePosition.md)
+- [STROKETYPE](pages/references/document-sandbox/document-apis/enumerations/StrokeType.md)
+- [TEXTALIGNMENT](pages/references/document-sandbox/document-apis/enumerations/TextAlignment.md)
+- [TEXTTYPE](pages/references/document-sandbox/document-apis/enumerations/TextType.md)
+- [VISUALEFFECTTYPE](pages/references/document-sandbox/document-apis/enumerations/VisualEffectType.md)
+- [AREATEXTLAYOUT](pages/references/document-sandbox/document-apis/interfaces/AreaTextLayout.md)
+- [AUTOHEIGHTTEXTLAYOUT](pages/references/document-sandbox/document-apis/interfaces/AutoHeightTextLayout.md)
+- [BASEPARAGRAPHSTYLES](pages/references/document-sandbox/document-apis/interfaces/BaseParagraphStyles.md)
+- [BITMAPIMAGE](pages/references/document-sandbox/document-apis/interfaces/BitmapImage.md)
+- [CHARACTERSTYLES](pages/references/document-sandbox/document-apis/interfaces/CharacterStyles.md)
+- [CHARACTERSTYLESINPUT](pages/references/document-sandbox/document-apis/interfaces/CharacterStylesInput.md)
+- [CHARACTERSTYLESRANGE](pages/references/document-sandbox/document-apis/interfaces/CharacterStylesRange.md)
+- [CHARACTERSTYLESRANGEINPUT](pages/references/document-sandbox/document-apis/interfaces/CharacterStylesRangeInput.md)
+- [COLOR](pages/references/document-sandbox/document-apis/interfaces/Color.md)
+- [COLORFILL](pages/references/document-sandbox/document-apis/interfaces/ColorFill.md)
+- [CONTAINERNODE](pages/references/document-sandbox/document-apis/interfaces/ContainerNode.md)
+- [FILL](pages/references/document-sandbox/document-apis/interfaces/Fill.md)
+- [IFILLABLENODE](pages/references/document-sandbox/document-apis/interfaces/IFillableNode.md)
+- [IRECTANGULARNODE](pages/references/document-sandbox/document-apis/interfaces/IRectangularNode.md)
+- [ISTROKABLENODE](pages/references/document-sandbox/document-apis/interfaces/IStrokableNode.md)
+- [LISTITEM](pages/references/document-sandbox/document-apis/interfaces/ListItem.md)
+- [ORDEREDLISTSTYLEINPUT](pages/references/document-sandbox/document-apis/interfaces/OrderedListStyleInput.md)
+- [PARAGRAPHSTYLES](pages/references/document-sandbox/document-apis/interfaces/ParagraphStyles.md)
+- [PARAGRAPHSTYLESINPUT](pages/references/document-sandbox/document-apis/interfaces/ParagraphStylesInput.md)
+- [PARAGRAPHSTYLESRANGE](pages/references/document-sandbox/document-apis/interfaces/ParagraphStylesRange.md)
+- [PARAGRAPHSTYLESRANGEINPUT](pages/references/document-sandbox/document-apis/interfaces/ParagraphStylesRangeInput.md)
+- [POINT](pages/references/document-sandbox/document-apis/interfaces/Point.md)
+- [POINTTEXTLAYOUT](pages/references/document-sandbox/document-apis/interfaces/PointTextLayout.md)
+- [RECT](pages/references/document-sandbox/document-apis/interfaces/Rect.md)
+- [RECTANGLEGEOMETRY](pages/references/document-sandbox/document-apis/interfaces/RectangleGeometry.md)
+- [SOLIDCOLORSTROKE](pages/references/document-sandbox/document-apis/interfaces/SolidColorStroke.md)
+- [STROKE](pages/references/document-sandbox/document-apis/interfaces/Stroke.md)
+- [STYLERANGE](pages/references/document-sandbox/document-apis/interfaces/StyleRange.md)
+- [TEXTRANGE](pages/references/document-sandbox/document-apis/interfaces/TextRange.md)
+- [UNORDEREDLISTSTYLEINPUT](pages/references/document-sandbox/document-apis/interfaces/UnorderedListStyleInput.md)
+- [UNSUPPORTEDTEXTLAYOUT](pages/references/document-sandbox/document-apis/interfaces/UnsupportedTextLayout.md)
+- [ORDEREDLISTNUMBERING](pages/references/document-sandbox/document-apis/namespaces/Constants/enumerations/OrderedListNumbering.md)
+- [PARAGRAPHLISTTYPE](pages/references/document-sandbox/document-apis/namespaces/Constants/enumerations/ParagraphListType.md)
+- [OVERVIEW](pages/references/document-sandbox/document-apis/namespaces/Constants/overview.md)
+- [OVERVIEW](pages/references/document-sandbox/document-apis/overview.md)
+- [EDITOREVENTHANDLER](pages/references/document-sandbox/document-apis/type-aliases/EditorEventHandler.md)
+- [EVENTHANDLERID](pages/references/document-sandbox/document-apis/type-aliases/EventHandlerId.md)
+- [FONT](pages/references/document-sandbox/document-apis/type-aliases/Font.md)
+- [ORDEREDLISTSTYLE](pages/references/document-sandbox/document-apis/type-aliases/OrderedListStyle.md)
+- [SOLIDCOLORSTROKEWITHOPTIONALTYPE](pages/references/document-sandbox/document-apis/type-aliases/SolidColorStrokeWithOptionalType.md)
+- [UNORDEREDLISTSTYLE](pages/references/document-sandbox/document-apis/type-aliases/UnorderedListStyle.md)
+- [COLOR PICKER](pages/references/ui-components/color-picker.md)
+- [SAMPLES](pages/samples.md)
